@@ -44,7 +44,7 @@ async function initializeApp() {
     bot.onText(/\/start/, (msg) => {
         const chatId = msg.chat.id;
         // Send with parse_mode: "MarkdownV2" (now safe)
-        bot.sendMessage(chatId, DISCLAIMER_MESSAGE, { parse_mode: "MarkdownV2" });
+        bot.sendMessage(chatId, DISCLAIMER_MESSAGE);
         // Consider clearing history or specific welcome logic here if needed
     });
 
